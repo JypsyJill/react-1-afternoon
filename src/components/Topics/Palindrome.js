@@ -16,12 +16,12 @@ export default class Palindrome extends Component {
 
     isPalindrome(userInput) {
         let forward = userInput;
-        let backward = userInput;
-        backward = backward.split('');
-        backward = backward.reverse();
-        backward = backward.join('');
+        let backwards = userInput;
+        backwards = backwards.split('');
+        backwards = backwards.reverse();
+        backwards = backwards.join('');
 
-        if ( forward === backward ) {
+        if ( forward === backwards ) {
             this.setState({ palindrome: 'true' });
         } else {
             this.setState({ palindrome: 'false' });
